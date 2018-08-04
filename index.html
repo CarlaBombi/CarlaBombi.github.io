@@ -10,9 +10,13 @@
               body{
               	  width: 90%;
                   max-width: 900px;
-                  margin: 30px auto 30px;
+                  margin: 15px auto 100px;
                   line-height: 1.2;
                   font-family: 'Assistant', sans-serif;
+                  font-size: 16px;
+              }
+              #contact{
+				margin: 30px 0px 40px 0px;
               }
 
               h1 {
@@ -34,7 +38,6 @@
               }
                p {
                   color: #282828;
-                  font-size: 14px;
               }
               #header {
                   color: #282828;
@@ -42,28 +45,78 @@
               table {
             			border: none;
             			margin: 0;
-                  font-size: 14px;
   				      }
 
   			      table td {
                   /*border-right: solid 20px transparent;*/
                   vertical-align: top;
-                  position: block;
                   min-width: 100px;
                   padding-bottom: 10px;
   				     }
+				ul {
+   					list-style-type: none;
+   					margin: 0;
+    				padding: 0;
+    				}
+
+				li {
+    				float: left;
+    				list-style:none;
+				}
+
+				li a {
+    				display: block;
+    				padding: 8px;
+    				background-color: #dddddd;
+				}
+				nav {
+					overflow: hidden;
+					background-color: #eeeeee;
+					margin: 0;
+				}
+				nav:after {
+					content: "";
+					display: table;
+					clear: both;
+				}
+				nav a {
+					float: left;
+					width: 50%;
+					color: black;
+					text-align: center;
+  					padding: 15px 0px 15px 0px;
+  					text-decoration: none;
+ 					font-size: 17px;
+ 					margin:
+ 				}
+ 				nav a:hover {
+ 						background-color: green;
+ 						color: white;
+ 						}
               @media screen and (min-width: 590px) {
                 body {
-                  margin: 75px auto 100px;
+                  margin: 20px auto 200px;
                   line-height: 1.35;
-                }
-                p, table{
                   font-size: 18px;
                 }
+                nav a {
+					float: center;
+					text-align: center;
+					width: 20%;
+  					padding: 15px 0px 15px 0px;
+ 				}
+ 				nav {
+ 					margin: 0 0 0 0px;
+ 					width: 100%;
+ 				}
               }
+
               @media screen and (min-width: 1024px) {
                 p {
                   margin-left: 20px;
+                }
+                #contact {
+                  margin: 40px 20px 60px 20px;
                 }
                 table {
                   margin-left: 20px;
@@ -75,8 +128,16 @@
 
 
   <body>
+  	<nav>
+ 		<a href="#contact">Contact</a>
+  		<a href="#about">About</a>
+  		<a href="#edu">Education</a>
+  		<a href="#conferences">Conferences</a>
+  		<a href="#scholarships">Scholarships</a>
+	</nav>
+    
+    <div id="contact">
     <h1> Carla Bombi</h1>
-    <div id="header">
       Department of Linguistics <br>
       University of Potsdam <br><br>
 
@@ -87,15 +148,13 @@
       14476 Potsdam, Germany<br>
     </div>
 
-    <br> <br>
-
-    <h2>About</h2>
+    <h2 id="about">About</h2>
     <p align="justify"> I am a research asociate (PhD position) in semantics/pragmatics at the University of Potsdam. In 2017, I joined the research group <a href="http://www.xprag.de/?page_id=4791">Exhaustiveness in embedded questions</a> (ExQ), led by Malte Zimmermann (Potsdam) and Edgar Onea (Graz), in which I investigate the exhaustivity properties of questions from an experimental and cross-linguistic perspective. My prior work looked at the expression of definiteness across languages, with a particular focus on Akan—a Kwa language spoken primarily in Ghana.
     </p>
 
     <br>
 
-    <h2>Education</h2>
+    <h2 id="edu">Education</h2>
 
     <table>
       <tr><td>2017 - now</td><td>PhD position/Research associate, University of Potsdam (Germany)</td></tr>
@@ -105,7 +164,7 @@
 
     <br>
 
-    <h2>Conference contributions</h2>
+    <h2 id="conferences">Conference contributions</h2>
   	<p><b>Bombi, C.</b>, Grubic, M., Renans, A. and Duah, R. Clausal determiners in Akan (Kwa). Talk held at The Semantics of African, Asian, and Austronesian Languages (TripleA) 5, June 2018, Konstanz</p>
   	<p>Bombi, C. Definiteness in Akan (Kwa): familiarity and uniqueness revisited. Poster presentation at Semantics and Linguistic Theory (SALT) 28, May 2018, MIT</p>
   	<p>Fricke, L., <b>Bombi, C.</b>, Onea E., and Zimmermann, M. Exhaustivity of wh-interrogatives embedded under German <i>wissen</i> 'know'. Talk held at the 19th Szklarska Poreba Workshop, February 23-26, 2018, Szklarska Poreba (Poland)</p>
@@ -114,12 +173,13 @@
 
     <br>
 
-    <h2>Scholarships</h2>
+    <h2 id="scholarships">Scholarships</h2>
 
     <table>
     	<tr><td>2015 - 2016</td><td>Deutschlandstipendium - University of Potsdam / Bundesministerium für Bildung und Forschung</td></tr>
     	<tr><td>2014 - 2015</td><td>German Academic Exchange Service (DAAD): Yearly Scholarship for international graduates</td></tr>
     </table>
-
-  </body>
+ 
+ </body>
 </html>
+
