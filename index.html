@@ -20,7 +20,9 @@
               }
 
               h1 {
-                  color: #282828;
+                    color: #282828;
+                	/*color: #186a3b;*/
+                  /*color:  #196f3d ;*/
                   font-size: 175%;
                   margin-top: 0;
               }
@@ -73,12 +75,12 @@
 					overflow: hidden;
 					background-color: #eeeeee;
 					margin: 0;
-					border-radius: 2px;
 				}
 				nav:after {
 					content: "";
 					display: table;
 					clear: both;
+					border-radius: 5px;
 				}
 				nav a {
 					float: left;
@@ -88,7 +90,7 @@
   					padding: 15px 0px 15px 0px;
   					text-decoration: none;
  					font-size: 16px;
- 					border-radius: 4px;
+ 					border-radius: 3px;
  				}
  				nav a:hover {
  						background-color: green;
@@ -112,6 +114,26 @@
  					width: 100%;
  				}
               }
+              #myBtn {
+  				 z-index: 99;
+  				 font-size: 18px;
+				 border: none;
+ 				 outline: none;
+ 				 background-color: white;
+ 				 color: black;
+ 				 padding: 20px 40px 20px 40px;
+    			 border: 2px solid green;
+  				 border-radius: 4px;
+  				 cursor: pointer;
+  				 text-align: center;
+  				 display: flex;
+				}
+
+				#myBtn:hover {
+ 				 background-color:  #f8f9f9 ;
+ 				 color: black;
+ 				 border: 2px solid green;
+				}
 
               @media screen and (min-width: 1024px) {
                 p {
@@ -135,7 +157,7 @@
  		<a href="#contact">Contact</a>
   		<a href="#about">About</a>
   		<a href="#edu">Education</a>
-  		<a href="#presentations">Presentations</a>
+  		<a href="#conferences">Conferences</a>
   		<a href="#scholarships">Scholarships</a>
 	</nav>
     
@@ -167,7 +189,7 @@
 
     <br>
 
-    <h2 id="presentations">Presentations</h2>
+    <h2 id="conferences">Conference contributions</h2>
   	<p><b>Bombi, C.</b>, Grubic, M., Renans, A. and Duah, R. Clausal determiners in Akan (Kwa). Talk held at The Semantics of African, Asian, and Austronesian Languages (TripleA) 5, June 2018, Konstanz</p>
   	<p>Bombi, C. Definiteness in Akan (Kwa): familiarity and uniqueness revisited. Poster presentation at Semantics and Linguistic Theory (SALT) 28, May 2018, MIT</p>
   	<p>Fricke, L., <b>Bombi, C.</b>, Onea E., and Zimmermann, M. Exhaustivity of wh-interrogatives embedded under German <i>wissen</i> 'know'. Talk held at the 19th Szklarska Poreba Workshop, February 23-26, 2018, Szklarska Poreba (Poland)</p>
@@ -182,6 +204,22 @@
     	<tr><td>2015 - 2016</td><td>Deutschlandstipendium - University of Potsdam / Bundesministerium für Bildung und Forschung</td></tr>
     	<tr><td>2014 - 2015</td><td>German Academic Exchange Service (DAAD): Yearly Scholarship for international graduates</td></tr>
     </table>
+    
+    <br>
+    <br>
+    <br>
+    
+   <p align="center"> 
+   	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button> 
+   </p>
  
+ 
+ 	<script>
+	// When the user clicks on the button, scroll to the top of the document
+	function topFunction() {
+    	document.body.scrollTop = 0;
+    	document.documentElement.scrollTop = 0;
+	}
+	</script>
  </body>
 </html>
