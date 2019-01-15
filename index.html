@@ -10,13 +10,19 @@
               body{
               	  width: 90%;
                   max-width: 900px;
-                  margin: 30px auto 30px;
+                  margin: 15px auto 100px;
                   line-height: 1.2;
                   font-family: 'Assistant', sans-serif;
+                  font-size: 16px;
+              }
+              #contact{
+				margin: 30px 0px 40px 0px;
               }
 
               h1 {
-                  color: #282828;
+                    color: #282828;
+                	/*color: #186a3b;*/
+                  /*color:  #196f3d ;*/
                   font-size: 175%;
                   margin-top: 0;
               }
@@ -34,76 +40,112 @@
               }
                p {
                   color: #282828;
-                  font-size: 14px;
               }
               #header {
                   color: #282828;
               }
-              table {
-            			border: none;
-            			margin: 0;
-                  font-size: 14px;
-  				      }
-
-  			      table td {
-                  /*border-right: solid 20px transparent;*/
-                  vertical-align: top;
-                  position: block;
-                  min-width: 100px;
-                  padding-bottom: 10px;
-  				     }
-				ul {
-   					list-style-type: none;
-   					margin: 0;
-    				padding: 0;
-    				}
-
-				li {
-    				float: left;
-    				list-style:none;
-				}
-
-				li a {
-    				display: block;
-    				padding: 8px;
-    				background-color: #dddddd;
-				}
-				.topnav {
-					overflow: hidden;
-					background-color: #332;
-				}
-				.topnav a {
-					float: left;
-					color: #f2f2f2;
-					text-align: center;
-  					padding: 14px 16px;
-  					text-decoration: none;
- 					 font-size: 17px;
- 				}
- 				.topnav a:hover {
- 						background-color: #ddd;
- 						color: black;
- 						}
-				.topnav a.active {
- 				background-color: green;
-  				color: white;
-				}
-
+	    table {
+		      border: none;
+		      margin: 0;
+	    }
+	    table td {
+		    /*border-right: solid 20px transparent;*/
+		    vertical-align: top;
+                    min-width: 100px;
+                    padding-bottom: 10px;
+	    }
+	    ul {
+		    list-style-type: none;
+		    margin: 0;
+		    padding: 0;
+	    }
+	    li {
+		    float: left;
+		    list-style:none;
+	    }
+	    li a {
+		    display: block;
+		    padding: 8px;
+		    background-color: #dddddd;
+	    }
+	    nav {
+		    overflow: hidden;
+		    background-color: #eeeeee;
+		    margin: 0;
+	    }
+	    nav:after {
+		    content: "";
+		    display: table;
+		    clear: both;
+		    border-radius: 5px;
+	    }
+	    nav a {
+		    float: left;
+		    width: 33%;
+		    color: black;
+		    text-align: center;
+		    padding: 15px 0px 15px 0px;
+		    text-decoration: none;
+		    font-size: 16px;
+		    border-radius: 3px;
+	    }
+	    nav a:hover {
+		    background-color: green;
+		    color: white;
+	    }
+	    #myBtn {
+		    z-index: 99;
+		    font-size: 16px;
+		    outline: none;
+		    background-color: white;
+		    color: black;
+		    padding: 16px 35px 16px 35px;
+		    border: 1px solid #800080;
+		    cursor: pointer;
+		    text-align: center;
+		    display: flex;
+		    border-radius: 1px;
+	    }
+	    a {
+		    color: #339933;
+	    }
               @media screen and (min-width: 590px) {
                 body {
-                  margin: 75px auto 100px;
+                  margin: 20px auto 200px;
                   line-height: 1.35;
-                }
-                p, table{
                   font-size: 18px;
                 }
+                nav a {
+			float: center;
+			text-align: center;
+			width: 20%;
+  			padding: 15px 0px 15px 0px;
+  			font-size: 18px
+ 		}
+ 		nav {
+ 			margin: 0 0 0 0px;
+			width: 100%;
+ 		}
+		#myBtn {
+		  	font-size: 18px;
+ 		  	padding: 20px 40px 20px 40px;
+		  	border: 2px solid #800080;
+			border-radius: 1px;
+		}
+		#myBtn:hover {
+			background-color: #f8f9f9;
+		}
               }
               @media screen and (min-width: 1024px) {
                 p {
                   margin-left: 20px;
                 }
+                #contact {
+                  margin: 40px 20px 60px 20px;
+                }
                 table {
                   margin-left: 20px;
+                  font: 18px;
                 }
               }
 
@@ -132,10 +174,8 @@
       14476 Potsdam, Germany<br>
     </div>
 
-    <br> <br>
-
     <h2 id="about">About</h2>
-    <p align="justify"> I am a research associate (PhD position) in semantics/pragmatics at the University of Potsdam. In 2017, I joined the research group <a href="http://www.xprag.de/?page_id=4791">Exhaustiveness in embedded questions</a> (ExQ), led by Malte Zimmermann (Potsdam) and Edgar Onea (Graz), in which I investigate the exhaustivity properties of questions from an experimental and cross-linguistic perspective. My prior work looked at the expression of definiteness across languages, with a particular focus on Akan—a Kwa language spoken primarily in Ghana.
+    <p align="justify"> I am a research associate (PhD position) in semantics/pragmatics at the University of Potsdam. In 2017, I joined the research group <a href="http://www.xprag.de/?page_id=4791">Exhaustiveness in embedded questions</a> (ExQ), led by Malte Zimmermann (Potsdam) and Edgar Onea (Graz). The group, which is part of the <a href="http://www.xprag.de">XPrag.de</a> priority program, investigates the exhaustivity properties of questions from an experimental and cross-linguistic perspective. My prior work looked at the expression of definiteness across languages, with a particular focus on Akan—a Kwa language spoken primarily in Ghana.
     </p>
 
     <br>
@@ -161,7 +201,7 @@
   	<p>Bombi, C. Definiteness in Akan (Kwa): familiarity and uniqueness revisited. Poster presentation at Semantics and Linguistic Theory (SALT) 28, May 2018, MIT</p>
   	<p>Fricke, L., <b>Bombi, C.</b>, Onea E., and Zimmermann, M. Exhaustivity of wh-interrogatives embedded under German <i>wissen</i> 'know'. Talk held at the 19th Szklarska Poreba Workshop, February 23-26, 2018, Szklarska Poreba (Poland)</p>
   	<p><b> Bombi, C.</b> and De Veaugh-Geiss, J. P. Quantitative data in the field: A case study on Akan. Poster presented at Linguistic Evidence 2018, February 15-17, 2018, Tübingen</p>
-    <p>Benz, A., <b>Bombi, C.</b> and Gotzner, N. Scalar diversity and negative strengthening. Talk held at Sinn und Bedeutung 22, September 7-10, 2017, Potsdam</p>
+    <p>Benz, A., <b>Bombi, C.</b> and Gotzner, N. Scalar diversity and negative strengthening. Talk held at Sinn und Bedeutung 22 (SuB), September 7-10, 2017, Potsdam</p>
 
     <br>
 
@@ -172,5 +212,21 @@
     	<tr><td>2014 - 2015</td><td>German Academic Exchange Service (DAAD): Yearly Scholarship for international graduates</td></tr>
     </table>
 
+    <br>
+    <br>
+    <br>
+
+   <p align="center">
+   	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+   </p>
+
+
+ 	<script>
+	// When the user clicks on the button, scroll to the top of the document
+	function topFunction() {
+    	document.body.scrollTop = 0;
+    	document.documentElement.scrollTop = 0;
+	}
+	</script>
  </body>
 </html>
