@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" >
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Carla Bombi | University of Potsdam</title>
+    <title>Carla Bombi | Semantics, General Linguistics</title>
     <style>
               @import url('https://fonts.googleapis.com/css?family=Assistant');
               body{
@@ -52,6 +52,43 @@
                   min-width: 100px;
                   padding-bottom: 10px;
   				     }
+				ul {
+   					list-style-type: none;
+   					margin: 0;
+    				padding: 0;
+    				}
+
+				li {
+    				float: left;
+    				list-style:none;
+				}
+
+				li a {
+    				display: block;
+    				padding: 8px;
+    				background-color: #dddddd;
+				}
+				.topnav {
+					overflow: hidden;
+					background-color: #332;
+				}
+				.topnav a {
+					float: left;
+					color: #f2f2f2;
+					text-align: center;
+  					padding: 14px 16px;
+  					text-decoration: none;
+ 					 font-size: 17px;
+ 				}
+ 				.topnav a:hover {
+ 						background-color: #ddd;
+ 						color: black;
+ 						}
+				.topnav a.active {
+ 				background-color: green;
+  				color: white;
+				}
+
               @media screen and (min-width: 590px) {
                 body {
                   margin: 75px auto 100px;
@@ -74,9 +111,17 @@
   </head>
 
 
-  <body>
+	<body>
+  	<div class="topnav">
+  		<a href="#about">About</a>
+  		<a href="#edu">Education</a>
+      <a href="#publications">Publications</a>
+  		<a href="#conferences">Conferences</a>
+  		<a href="#scholarships">Scholarships</a>
+	</div>
+
+    <div id="contact">
     <h1> Carla Bombi</h1>
-    <div id="header">
       Department of Linguistics <br>
       University of Potsdam <br><br>
 
@@ -89,23 +134,29 @@
 
     <br> <br>
 
-    <h2>About</h2>
-    <p align="justify"> I am a research asociate (PhD position) in semantics/pragmatics at the University of Potsdam. In 2017, I joined the research group <a href="http://www.xprag.de/?page_id=4791">Exhaustiveness in embedded questions</a> (ExQ), led by Malte Zimmermann (Potsdam) and Edgar Onea (Graz), in which I investigate the exhaustivity properties of questions from an experimental and cross-linguistic perspective. My prior work looked at the expression of definiteness across languages, with a particular focus on Akan—a Kwa language spoken primarily in Ghana.
+    <h2 id="about">About</h2>
+    <p align="justify"> I am a research associate (PhD position) in semantics/pragmatics at the University of Potsdam. In 2017, I joined the research group <a href="http://www.xprag.de/?page_id=4791">Exhaustiveness in embedded questions</a> (ExQ), led by Malte Zimmermann (Potsdam) and Edgar Onea (Graz), in which I investigate the exhaustivity properties of questions from an experimental and cross-linguistic perspective. My prior work looked at the expression of definiteness across languages, with a particular focus on Akan—a Kwa language spoken primarily in Ghana.
     </p>
 
     <br>
 
-    <h2>Education</h2>
+    <h2 id="edu">Education</h2>
 
     <table>
-      <tr><td>2017 - now</td><td>PhD position/Research associate, University of Potsdam (Germany)</td></tr>
+      <tr><td>2017 - now</td><td>Research associate, University of Potsdam (Germany)</td></tr>
   		<tr><td>2014 - 2017</td><td>MSc Linguistics, University of Potsdam (Germany)</td></tr>
   		<tr><td>2011 - 2014</td><td>BA Linguistics, University of Cambridge (UK)</td></tr>
   	</table>
 
     <br>
 
-    <h2>Conference contributions</h2>
+    <h2 id="publications">Publications</h2>
+    <p><b>Bombi, C.</b>, Grubic, M., Renans, A. and Duah, R. The semantics of the clausal determiner <i>nó</i> in Akan. To appear in Proceedings of Sinn und Bedeutung (SuB) 23.</p>
+  	<p>Bombi, C. 2018. Definiteness in Akan: familiarity and uniqueness revisited. In S. Maspong, B. Stefánsdóttir, K. Blake and F. Davis (eds.), Semantics and Linguistic Theory (SALT) 28, 120-140. </p>
+  	<p>Benz, A., <b>Bombi, C.</b> and Gotzner, N. 2018. Scalar diversity and negative strengthening. Proceedings of Sinn und Bedeutung 22, 191-203.</p>
+	   <br>
+
+    <h2 id="conferences">Conference contributions</h2>
   	<p><b>Bombi, C.</b>, Grubic, M., Renans, A. and Duah, R. Clausal determiners in Akan (Kwa). Talk held at The Semantics of African, Asian, and Austronesian Languages (TripleA) 5, June 2018, Konstanz</p>
   	<p>Bombi, C. Definiteness in Akan (Kwa): familiarity and uniqueness revisited. Poster presentation at Semantics and Linguistic Theory (SALT) 28, May 2018, MIT</p>
   	<p>Fricke, L., <b>Bombi, C.</b>, Onea E., and Zimmermann, M. Exhaustivity of wh-interrogatives embedded under German <i>wissen</i> 'know'. Talk held at the 19th Szklarska Poreba Workshop, February 23-26, 2018, Szklarska Poreba (Poland)</p>
@@ -114,12 +165,12 @@
 
     <br>
 
-    <h2>Scholarships</h2>
+    <h2 id="scholarships">Scholarships</h2>
 
     <table>
     	<tr><td>2015 - 2016</td><td>Deutschlandstipendium - University of Potsdam / Bundesministerium für Bildung und Forschung</td></tr>
     	<tr><td>2014 - 2015</td><td>German Academic Exchange Service (DAAD): Yearly Scholarship for international graduates</td></tr>
     </table>
 
-  </body>
+ </body>
 </html>
