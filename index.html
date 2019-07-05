@@ -18,6 +18,22 @@
               #contact{
 				margin: 30px 0px 40px 0px;
               }
+	    .column {
+  		float: left;
+ 		width: 50%;
+		}
+	    .left {
+  		width: 30%;
+		}
+
+	    .right {
+		width: 70%;
+		}
+	    @media screen and (max-width: 600px) {
+ 		 .column {
+    		width: 100%;
+  		}	
+	     }
 
               h1 {
                     color: #282828;
@@ -189,8 +205,15 @@
   		<a href="#scholarships">Scholarships</a>
 	</nav>
 
-    <div id="contact">
-    <img style="float: left; margin-right: 25px;" src="mountain.jpg" width=250 height=150 alt="Img: Carla-mountain"/>
+	   <div class="row">
+  <div class="column"></div>
+  <div class="column"></div>
+</div> 
+    <div class="row" id="contact">
+    <div class="column">
+	    <img style="float: left; margin-right: 25px;" src="mountain.jpg" width=250 height=150 alt="Img: Carla-mountain"/>
+	</div>
+    <div class="column">
     <h1> Carla Bombi</h1>
       <!--Department of Linguistics <br>
       University of Potsdam <br><br>/-->
@@ -200,6 +223,7 @@
       <!--Campus Golm, House 14, Room 3.22<br>
       Karl-Liebknecht-Str. 24/25<br>
       14476 Potsdam, Germany<br>//-->
+	</div> 
     </div>
 	  <br>
 
