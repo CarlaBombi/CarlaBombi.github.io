@@ -5,6 +5,18 @@
     <meta charset="utf-8" >
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Carla Bombi | Linguistics | Semantics </title>
+    <script>
+	    // when the use scrolls down 20px from the top, slide down navbar
+	    // when user scrolls to top, slide up navbar (50x out of the top view)
+	window.onscroll = function() {scrollFunction()};
+
+	    function scrollFunction(){
+		    if (document.body.scrollTop > 20 || document.documentElemnt.scrollTop > 20) {
+			    document.getElementById("nav").style.top = "0";
+		    } else {
+			    document.getElementById("nav").style.top = "50px"; 
+	    }
+    </script>
     <style>
               @import url('https://fonts.googleapis.com/css?family=Assistant');
 	    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
