@@ -11,7 +11,7 @@
 	window.onscroll = function() {scrollFunction()};
 
 	    function scrollFunction(){
-		    if (document.body.scrollTop > 20 || document.documentElemnt.scrollTop > 20) {
+		    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
 			    document.getElementById("nav").style.top = "0";
 		    } else {
 			    document.getElementById("nav").style.top = "50px"; 
@@ -24,27 +24,30 @@
               body{
               	  width: 88%;
                   max-width: 900px;
-                  margin: 0px auto 100px;
-                  line-height: 1.2;
+                  margin: 0 auto;
+                  line-height: 1.4;
                  /* font-family: 'Assistant', sans-serif; */
 		font-family: "Roboto", sans-serif;
                   font-size: 15px;
 		color: #282828;
               }
-              .container {
-  					display: flex;
-  					align-items: stretch;
-  					flex-wrap:wrap;
-  					margin-top: 30px;
-  					margin-bottom: 30px;
-				}
+    .container {
+        display: flex;
+        align-items: stretch;
+        flex-wrap: wrap;
+        margin-top: 120px;
+        margin-bottom: 30px;
+        margin-left: auto;
+        margin-right: auto;
+}
 
-			.container > div {
- 				 background-color: none;
- 				 margin-left: 5px;
- 				 text-align: left;
- 				 margin-top: 10px;
-				}
+.container > div {
+    background-color: none;
+    margin-left: 0px;
+    text-align: left;
+    margin-top: 0px;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
               h1 {
                 	/*color: #186a3b;*/
                  /*color:  #08302F;*/
@@ -86,29 +89,39 @@
                   padding-bottom: 10px;
   				     }
 				
+
 		nav {
-			overflow: hidden;
-			background-color: #421c30;
-			margin: 0;
-			position: fixed; 
-			transition: top 0.3s
-			}
+            position: fixed; /* Fixed position */
+            overflow: hidden;
+            background-color: #421c30;
+            margin: 0 auto;
+            text-align: center;
+            float: center;
+            top: 0;
+            left: 10;
+            right: 10;
+            left: 50%; /* Center the nav bar */
+        transform: translateX(-50%); /* Center the nav bar */
+             width: 100%;
+        }
+
+        nav a.nav-link {
+        width: 20%; /* Adjust the width as needed */
+        float: left; /* Ensure the links are floated to the left */
+        text-align: center; /* Center the text within each link */
+        padding: 10px 0; /* Add padding for better spacing and appearance */
+        text-decoration: none;
+        font-size: 100%;
+        color: white;
+        
+        }
 		/*nav:after {
 			content: "";
 			display: table;
 			clear: both;
 			border-radius: 5px;
 			}*/
-		nav a.nav-link {
-			float: left;
-			width: 33%;
-			text-align: center;
-  			padding: 15px 0px 15px 0px;
-  			text-decoration: none;
- 			font-size: 16px;
- 			border-radius: 2px;
-			color: white;
- 			}
+
  		nav a.nav-link:hover {
  			background-color: #ab9353;
 			color: black;
@@ -120,22 +133,21 @@
    
     @media screen and (min-width: 590px) {
          body {
-            margin: 20px auto 200px;
             line-height: 1.35;
             font-size: 15px;
             }
 		
-        nav a.nav-link {
-			float: center;
+        /*nav a.nav-link {
+			float: left;
 			text-align: center;
 			width: 20%;
   			padding: 15px 0px 15px 0px;
-  			font-size: 16px
+  			font-size: 16px;
  			}
- 	nav {
+ 	    nav {
  			margin: 0 0 0 0px;
  			width: 100%;
- 			}
+ 			}*/
 
 	table {
                   margin-left: 20px;
@@ -160,6 +172,11 @@
  				 color: black;
  				 border: 2px solid #4D2C3D;
 				}
+    @media screen and (min-width: 800px) {
+        nav {
+             width: 100%;
+             }
+    }
     
     @media screen and (min-width: 1024px) {
                 p {
@@ -169,6 +186,9 @@
                   margin-left: 20px;
                   font: 15px
                 }
+                nav {
+             width: 70%;
+             }
                 #myBtn {
   			font-size: 16px;
  			padding: 20px 40px 20px 40px;
@@ -270,4 +290,3 @@
 	</script>
  </body>
 </html>
-
